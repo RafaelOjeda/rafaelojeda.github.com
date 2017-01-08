@@ -1,0 +1,20 @@
+.postcard-body
+  height: 100vh
+  width: 100vw
+  display: flex
+  justify-content: center
+  align-items: center
+  .postcard
+    display: flex
+    height: 400px
+    width: 800px
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    transition: all .3s
+    .postcard-content
+      flex: 1
+      padding: 20px
+      text-align: justify
+      background-image: url('../img/graph.jpg')
+      .postcard-description
+    &:hover
+      transform: scale(1.1) rotate(-1deg)

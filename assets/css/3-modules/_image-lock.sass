@@ -1,0 +1,28 @@
+.image-lock
+  //DEPENDS ON PAGE box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  position: relative
+  transition: all .3s
+  .image
+    display: block
+    filter: blur(5px)
+    transition: all .3s
+  .image-meta
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: fade-out($navy, .3)
+    color: #FFF
+    font-weight: bold
+    font-size: 30px
+    transition: all .3s
+  &:hover
+    //DEPENDS ON PAGE transform: scale(1.3) rotate(-5deg)
+    .image
+      filter: blur(0px)
+    .image-meta
+      display: none
